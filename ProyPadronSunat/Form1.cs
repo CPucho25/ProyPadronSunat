@@ -26,8 +26,6 @@ namespace ProyPadronSunat
         static string path2_Unzip = Environment.CurrentDirectory + @"\2-Unzip\";
         static string path3_txtFormat = Environment.CurrentDirectory + @"\3-TxtFormat\";
 
-
-
         public Form1()
         {
             InitializeComponent();
@@ -40,7 +38,6 @@ namespace ProyPadronSunat
             options.AddUserProfilePreference("download.default_directory", path1_DWL);
 
             driver = new ChromeDriver(options);
-
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
