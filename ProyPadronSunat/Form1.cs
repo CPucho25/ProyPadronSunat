@@ -32,10 +32,13 @@ namespace ProyPadronSunat
 
             createPaths();
 
+
             //option por default para descarga multiple
             var options = new ChromeOptions();
             options.AddUserProfilePreference("profile.default_content_setting_values.automatic_downloads", 1);
             options.AddUserProfilePreference("download.default_directory", path1_DWL);
+
+            options.AddUserProfilePreference("profile.managed_default_content_settings.insecure_content", 1);
 
             driver = new ChromeDriver(options);
         }
